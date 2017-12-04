@@ -5,7 +5,7 @@ import Header from '../components/common/Header';
 import HomePage from '../components/HomePage';
 import AboutPage from '../components/AboutPage';
 import GaragePage from '../components/GaragePage';
-import ModelsPage from '../components/ModelsPage';
+import ModelsPage from '../components/modelsComponents/ModelsPage';
 import TestDrivePage from '../components/TestDrivePage';
 
 const AppRouter = () => (
