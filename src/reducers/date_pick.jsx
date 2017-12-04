@@ -1,4 +1,4 @@
-const DateReducer = (state = { img: '' }, action) => {
+const DateReducer = (state = 'pesho', action) => {
   switch (action.type) {
     case 'PICK_DATE':
       return action.id;
@@ -7,7 +7,7 @@ const DateReducer = (state = { img: '' }, action) => {
     //   img: action.img
     // };
     case 'SELECTED_DATE':
-      return { ...state, selected: action.selected };
+      return action.selectedDate;
     default:
       return state;
   }

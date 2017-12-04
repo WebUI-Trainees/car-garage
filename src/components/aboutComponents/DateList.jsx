@@ -13,16 +13,17 @@ const DateList = props => (
       <SingleDate
         handleClick={props.selectItem}
         key={uuid()}
-        selected={props.date.selected}
+        selectedDate={props.selectedDate}
         id={item.id}
-        title={item.title}
+        date={item.title}
+        text={item.text}
       />
     ))}
   </div>
 );
 
 const mapStateToProps = state => ({
-  date: state.date,
+  selectedDate: state.selectedDate,
   items: state.items
 });
 
@@ -30,20 +31,13 @@ const mapDispatchToProps = dispatch => bindActionCreators({ datePick: DatePicker
 
 DateList.propTypes = {
   selectItem: PropTypes.func.isRequired,
-  date: PropTypes.shape({
-    img: PropTypes.string,
-    selected: PropTypes.bool.isRequired
-  }),
+  selectedDate: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired
     })
   ).isRequired
-};
-
-DateList.defaultProps = {
-  date: {}
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(DateList);

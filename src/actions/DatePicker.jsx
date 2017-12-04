@@ -8,9 +8,9 @@ const DatePicker = ({ img = 'image1', id, title = 'demotitle' }) => ({
   img
 });
 
-const SelectedDate = selected => ({
+const SelectedDate = selectedDate => ({
   type: 'SELECTED_DATE',
-  selected
+  selectedDate
 });
 
 export { DatePicker, SelectedDate };
