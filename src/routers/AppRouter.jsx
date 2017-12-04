@@ -6,7 +6,7 @@ import HomePage from '../components/HomePage';
 import AboutPage from '../components/AboutPage';
 import GaragePage from '../components/GaragePage';
 import ModelsPage from '../components/ModelsPage';
-import TestDrivePage from '../components/TestDrivePage';
+import TestDrivePage from '../components/testDriveComponents/TestDrivePage';
 
 const AppRouter = () => (
   <BrowserRouter>
