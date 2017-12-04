@@ -1,0 +1,10 @@
+.is-active {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 7px;
+  margin: 7px;
+}
