@@ -1,19 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import DateList from './aboutComponents/DateList';
-import Image from './aboutComponents/Image';
-import SingleDate from './aboutComponents/SingleDate';
 import Slider from './aboutComponents/Slider';
-import TextContainer from './aboutComponents/TextContainer';
+import selectItem from '../actions/selectItem';
+import DateDetails from './aboutComponents/DateDetails';
 
-const AboutPage = () => (
+const AboutPage = props => (
   <div>
     <Slider />
-    <DateList>
-      <SingleDate />
-    </DateList>
-    <Image />
-    <TextContainer />
+    <DateList items={props.items} selectItem={props.selectItem} />
+    <DateDetails selectedItem={props.selectedItem} />
   </div>
 );
 
-export default AboutPage;
+const mapStateToProps = state => ({
+  selectedItem: state.selectedItem,
+  items: state.items
+});
+
+const mapDispatchToProps = dispatch => bindActionCreators({ selectItem }, dispatch);
+
+AboutPage.propTypes = {
+  selectItem: PropTypes.func.isRequired,
+  selectedItem: PropTypes.shape({
+    date: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    imageSrc: PropTypes.string.isRequired
+  }).isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      date: PropTypes.string.isRequired
+    })
+  ).isRequired
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AboutPage);

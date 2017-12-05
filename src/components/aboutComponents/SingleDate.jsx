@@ -1,24 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SingleDate = props => (
-  <div onClick={() => props.handleClick(props.date)}>
-    <p>{props.date}</p>
-    {props.selectedDate === props.date ? props.text : ''}
+const SingleDate = ({ item, selectItem }) => (
+  <div onClick={() => selectItem(item)}>
+    <p>{item.date}</p>
   </div>
 );
 
 SingleDate.propTypes = {
-  handleClick: PropTypes.func,
-  selectedDate: PropTypes.string,
-  date: PropTypes.string,
-  text: PropTypes.string
+  selectItem: PropTypes.func.isRequired,
+  item: PropTypes.shape({
+    date: PropTypes.string,
+    text: PropTypes.string,
+    imageSrc: PropTypes.string
+  }).isRequired
 };
 
-SingleDate.defaultProps = {
-  handleClick: () => {},
-  date: 'Not selected',
-  selectedDate: 'test',
-  text: ''
-};
 export default SingleDate;
