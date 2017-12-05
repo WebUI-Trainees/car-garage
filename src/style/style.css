@@ -9,10 +9,7 @@ a {
   margin: 7px;
 }
 
-iframe {
-  background-color: rgba(255, 255, 255, 0.76);
-}
-
+/* TEST DRIVE PAGE */
 .container {
   display: flex;
 }

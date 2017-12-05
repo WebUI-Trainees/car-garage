@@ -7,7 +7,6 @@ import db from '../../sample-data';
 class ConversationPane extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.loadSampleData = this.loadSampleData.bind(this);
   }
   // Handle when User navigates from / to /conversation/:human
