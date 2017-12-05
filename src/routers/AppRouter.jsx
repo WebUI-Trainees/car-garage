@@ -6,6 +6,7 @@ import HomePage from '../components/HomePage';
 import AboutPage from '../components/AboutPage';
 import GaragePage from '../components/GaragePage';
 import ModelsPage from '../components/modelsComponents/ModelsPage';
+import ModelPage from '../components/modelsComponents/SingleModelPage';
 import TestDrivePage from '../components/testDriveComponents/TestDrivePage';
 
 const AppRouter = () => (
@@ -18,6 +19,7 @@ const AppRouter = () => (
         <Route path="/drive" component={TestDrivePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/models" component={ModelsPage} />
+        <Route path="/model/:id" component={ModelPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
