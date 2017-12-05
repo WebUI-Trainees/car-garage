@@ -27,6 +27,14 @@ a {
 /* INBOX PANE */
 #inbox-pane {
   background-color:#6aa0a6;
+  position: relative;
+}
+
+#inbox-pane .refresh {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
 }
 
 #inbox-pane > table {

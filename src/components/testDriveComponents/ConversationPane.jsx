@@ -1,50 +1,65 @@
-/* eslint react/prop-types: 0 */
-
 import React from 'react';
+import PropTypes from 'prop-types';
 import Message from './Message';
-import db from '../../sample-data';
+// import db from '../../sample-data';
+import Human from '../../common/types';
 
 class ConversationPane extends React.Component {
-  constructor(props) {
-    super(props);
-    this.loadSampleData = this.loadSampleData.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.loadSampleData = this.loadSampleData.bind(this);
+  // }
+
   // Handle when User navigates from / to /conversation/:human
   componentWillMount() {
-    this.loadSampleData(this.props.match.params.human);
+    // this.loadSampleData(this.props.human);
+    this.props.onComponentDidMount();
   }
 
   // Handle when User navigates between conversations
-  componentWillReceiveProps(nextProps) {
-    this.loadSampleData(nextProps.match.params.human);
+  // componentWillReceiveProps(nextProps) {
+  //   this.loadSampleData(nextProps.human);
+  // }
+
+  get emptyMessage() {
+    return <h4>Select a Conversation from the Inbox</h4>;
   }
 
-  loadSampleData(human) {
-    this.setState({ conversation: db.humans[human].conversations });
+  get conversationComponent() {
+    return [
+      <h1>Conversation</h1>,
+      <h3>{this.props.humanId}</h3>,
+      <div id="messages">{this.props.human.conversations.map(this.renderMessage)}</div>
+    ];
   }
 
-  sortByDateDesc(a, b) {
-    if (a.time < b.time) {
-      return -1;
-    } else if (a.time > b.time) {
-      return 1;
-    }
+  // loadSampleData(human) {
+  //   if (human) this.setState({ conversation: db.humans[human].conversations });
+  // }
 
-    return 0;
-  }
-  renderMessage(val) {
-    return <Message who={val.who} text={val.text} key={val.time.getTime()} />;
+  renderMessage(val, idx) {
+    return <Message who={val.who} text={val.text} key={idx} />;
   }
 
   render() {
     return (
       <div id="conversation-pane" className="column">
-        <h1>Conversation</h1>
-        <h3>{this.props.match.human}</h3>
-        <div id="messages">{this.state.conversation.sort(this.sortByDateDesc).map(this.renderMessage)}</div>
+        {this.props.human ? this.conversationComponent : this.emptyMessage}
       </div>
     );
   }
 }
+
+ConversationPane.propTypes = {
+  human: Human,
+  humanId: PropTypes.string,
+  onComponentDidMount: PropTypes.func
+};
+
+ConversationPane.defaultProps = {
+  human: null,
+  humanId: '',
+  onComponentDidMount: () => true
+};
 
 export default ConversationPane;
