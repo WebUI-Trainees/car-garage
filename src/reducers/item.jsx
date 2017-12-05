@@ -1,5 +1,5 @@
 const defaultState = {
-  id: 1,
+  id: 0,
   date: '1886-1893',
   text:
     'Mercedes-Benz (German pronunciation: [mɛʁˈtseːdəsˌbɛnts]) is a global automobile manufacturer and a division of the German company Daimler AG. The brand is known for luxury vehicles, buses, coaches, and lorries. The headquarters is in Stuttgart, Baden-Württemberg. The name first appeared in 1926 under Daimler-Benz. \n' +

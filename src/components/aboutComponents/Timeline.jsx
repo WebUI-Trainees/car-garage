@@ -3,33 +3,19 @@ import Slider from 'react-rangeslider';
 import PropTypes from 'prop-types';
 import nth from 'lodash/nth';
 
-class Timeline extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 0
-    };
-  }
-
-  handleChange = value => {
-    this.setState({
-      value
-    });
-    this.props.selectItem(nth(this.props.items, value));
+const Timeline = props => {
+  const handleChange = value => {
+    props.selectItem(nth(props.items, value));
   };
 
-  render() {
-    const { items } = this.props;
-    const { value } = this.state;
+  const { items } = props;
 
-    return (
-      <div className="slider">
-        <Slider min={0} max={items.length} value={value} onChange={this.handleChange} />
-        <div className="value">{value}</div>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="slider">
+      <Slider min={0} max={items.length - 1} value={props.selectedItem.id} onChange={handleChange} />
+    </div>
+  );
+};
 
 Timeline.propTypes = {
   selectItem: PropTypes.func.isRequired,
@@ -39,7 +25,10 @@ Timeline.propTypes = {
       text: PropTypes.string,
       imageSrc: PropTypes.string
     })
-  ).isRequired
+  ).isRequired,
+  selectedItem: PropTypes.shape({
+    id: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default Timeline;
