@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import InboxPane from './InboxPane';
 import ConversationPane from './ConversationPane';
 import StorePane from './StorePane';
+import Chat from './Chat';
 import db from '../../sample-data';
 
 class TestDrivePage extends Component {
@@ -21,8 +22,6 @@ class TestDrivePage extends Component {
 
   // Handle when user navigates to a conversation directly without first loading the index...
   componentWillMount() {
-    console.log(this.props.match.params);
-
     if ('human' in this.props.match.params) {
       this.loadSampleData();
     }
@@ -53,6 +52,7 @@ class TestDrivePage extends Component {
           </Switch>
           <StorePane stores={this.state.stores} />
         </div>
+        <Chat />
       </div>
     );
   }
