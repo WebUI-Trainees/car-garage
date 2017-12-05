@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import DateList from './aboutComponents/DateList';
-import Slider from './aboutComponents/Slider';
+import Timeline from './aboutComponents/Timeline';
 import selectItem from '../actions/selectItem';
 import DateDetails from './aboutComponents/DateDetails';
 
 const AboutPage = props => (
   <div>
-    <Slider />
+    <Timeline items={props.items} selectItem={props.selectItem} />
     <DateList items={props.items} selectItem={props.selectItem} />
     <DateDetails selectedItem={props.selectedItem} />
   </div>
