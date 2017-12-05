@@ -108,6 +108,27 @@ const defaultState = [
     model: 'GLE Class',
     image: `${IMAGES_DIRECTORY}gle-coupe.jpg`,
     price: '110 000$'
+  },
+  {
+    id: 'gle-suv',
+    name: 'The GLE Class',
+    model: 'GLE class',
+    image: `${IMAGES_DIRECTORY}gle-suv.jpg`,
+    price: '100 000$'
+  },
+  {
+    id: 'gls-suv',
+    name: 'The GLS Class',
+    model: 'GLS class',
+    image: `${IMAGES_DIRECTORY}gls-suv.jpg`,
+    price: '100 000$'
+  },
+  {
+    id: 's-class',
+    name: 'The S Class',
+    model: 'S class',
+    image: `${IMAGES_DIRECTORY}s-class-saloon.jpg`,
+    price: '100 000$'
   }
 ];
 

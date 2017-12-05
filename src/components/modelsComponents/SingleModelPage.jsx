@@ -1,9 +1,10 @@
-import React from 'react';
-import LinkSectionItem from './singleModelComponents/LinkSectionItem';
+/* eslint react/prop-types: 0 */
 
-const ModelPage = () => (
+import React from 'react';
+
+const ModelPage = ({ match }) => (
   <div>
-    <LinkSectionItem />
+    <h3>ID: {match.params.id}</h3>
   </div>
 );
 
