@@ -11,7 +11,7 @@ class Message extends Component {
   render() {
     return (
       <p className={this.props.who}>
-        <img alt="" src={`/src/assets/${this.props.who}.png`} /> {this.props.text}
+        <img alt="" src={`/src/images/driveAssets/${this.props.who}.png`} /> {this.props.text}
       </p>
     );
   }
