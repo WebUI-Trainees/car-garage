@@ -9,7 +9,7 @@ import DateDetails from './aboutComponents/DateDetails';
 
 const AboutPage = props => (
   <div>
-    <Timeline items={props.items} selectItem={props.selectItem} />
+    <Timeline items={props.items} selectItem={props.selectItem} selectedItem={props.selectedItem} />
     <DateList items={props.items} selectItem={props.selectItem} />
     <DateDetails selectedItem={props.selectedItem} />
   </div>
