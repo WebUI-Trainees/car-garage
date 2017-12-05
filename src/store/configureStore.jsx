@@ -4,7 +4,7 @@ import ItemsReducer from '../reducers/dates_list';
 import CarModels from '../reducers/reducers_car_models';
 
 const rootReducer = combineReducers({
-  date: DateReducer,
+  selectedDate: DateReducer,
   items: ItemsReducer,
   carModels: CarModels
 });

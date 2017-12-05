@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import uuid from 'uuid';
-import { DatePicker, SelectedDate } from '../../actions/DatePicker';
+import SelectedDate from '../../actions/DatePicker';
 
 import SingleDate from './SingleDate';
 
@@ -13,37 +13,30 @@ const DateList = props => (
       <SingleDate
         handleClick={props.selectItem}
         key={uuid()}
-        selected={props.date.selected}
-        id={item.id}
-        title={item.title}
+        selectedDate={props.selectedDate}
+        date={item.title}
+        text={item.text}
       />
     ))}
   </div>
 );
 
 const mapStateToProps = state => ({
-  date: state.date,
+  selectedDate: state.selectedDate,
   items: state.items
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({ datePick: DatePicker, selectItem: SelectedDate }, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({ selectItem: SelectedDate }, dispatch);
 
 DateList.propTypes = {
   selectItem: PropTypes.func.isRequired,
-  date: PropTypes.shape({
-    img: PropTypes.string,
-    selected: PropTypes.bool.isRequired
-  }),
+  selectedDate: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired
     })
   ).isRequired
-};
-
-DateList.defaultProps = {
-  date: {}
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(DateList);

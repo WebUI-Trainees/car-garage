@@ -2,21 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SingleDate = props => (
-  <div onClick={() => props.handleClick(!props.selected)}>
-    <p>{props.title}</p>
-    {props.selected ? <p>{props.id}</p> : 'No date selected'}
+  <div onClick={() => props.handleClick(props.date)}>
+    <p>{props.date}</p>
+    {props.selectedDate === props.date ? props.text : ''}
   </div>
 );
 
 SingleDate.propTypes = {
   handleClick: PropTypes.func,
-  selected: PropTypes.bool.isRequired,
-  title: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired
+  selectedDate: PropTypes.string,
+  date: PropTypes.string,
+  text: PropTypes.string
 };
 
 SingleDate.defaultProps = {
-  handleClick: () => {}
-  // img: ''
+  handleClick: () => {},
+  date: 'Not selected',
+  selectedDate: 'test',
+  text: ''
 };
 export default SingleDate;
