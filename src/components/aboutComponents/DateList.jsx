@@ -16,6 +16,7 @@ const DateList = props => (
         selectedDate={props.selectedDate}
         date={item.title}
         text={item.text}
+        imageSrc={item.imageSrc}
       />
     ))}
   </div>
