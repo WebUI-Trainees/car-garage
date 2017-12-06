@@ -11,6 +11,7 @@ const webpackConfig = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -21,6 +22,11 @@ const webpackConfig = {
           }
         ],
         include: [PATHS.SRC],
+        enforce: 'pre'
+      },
+      {
+        test: /\.(js|jsx)?$/,
+        use: ['source-map-loader'],
         enforce: 'pre'
       },
       {
