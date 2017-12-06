@@ -1,22 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// const LinkSectionItem = props => {
-//   const { className, children, ...linkClasses } = props;
+const LinkSectionItem = props => {
+  const { className, children, ...linkClasses } = props;
 
-//   linkClasses.className = `image ${className}`;
+  linkClasses.className = `image ${className}`;
 
-//   return (
-//     <a className="d-inline-block single-link">
-//       <div {...linkClasses} />
-//       <p className="title">{children}</p>
-//     </a>
-//   );
-// };
+  return (
+    <a className="d-inline-block single-link">
+      <div {...linkClasses} />
+      <p className="title">{children}</p>
+    </a>
+  );
+};
 
-const LinkSectionItem = () => (
-  <a className="d-inline-block single-link">
-    <p className="title" />
-  </a>
-);
+LinkSectionItem.propTypes = {
+  className: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+};
 
 export default LinkSectionItem;
