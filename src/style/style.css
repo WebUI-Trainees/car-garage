@@ -1,6 +1,18 @@
 /* Base */
 /* ssColor = #00b7d3 */
 
+.d-inline-block {
+  display: inline-block!important;
+}
+
+.d-block {
+  display: block!important;
+}
+
+.d-inline {
+  display: inline!important;
+}
+
 .is-active {
   font-weight: bold;
 }
@@ -88,6 +100,7 @@ a {
 .model-container .model {
   height: 35px;
   margin: 0;
+  padding-left: 50px;
 }
 .model-container .car-image {
   height: 200px;
@@ -105,17 +118,14 @@ a {
   max-width: 100%;
   max-height: 100%;
 }
-.model-container .buttons-container {
-  display: flex;
-}
-/*
+
 .model-container .buttons-container a {
   vertical-align: middle;
 }
 .model-container .buttons-container a:not(:first-child) {
   margin-left: 10px;
 }
-*/
+
 
 
 /*Dropdown*/

@@ -13,16 +13,14 @@ const ModelListItem = ({ model }) => {
         <img src={model.image} alt={model.model} />
       </div>
       <div className="buttons-container">
-        <div className="d-inline-block">
+        <Link className="d-inline-block" to={path()}>
           <div className="button-with-icon d-inline-block">
             <div className="icon">
               <div className="icon-image" />
             </div>
-            <Link to={path()}>
-              <p className="button-text">View more</p>
-            </Link>
+            <p className="button-text">View more</p>
           </div>
-        </div>
+        </Link>
         <a className="d-inline-block">
           <div className="square-button">
             <div className="icon configure" />
