@@ -4,38 +4,34 @@ import PropTypes from 'prop-types';
 import CarouselItem from './CarouselItem';
 
 const SampleNextArrow = props => {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
 
-  return <div className={className} style={{ ...style, display: 'block' }} onClick={onClick} />;
+  return <div className={className} onClick={onClick} />;
 };
 
 SampleNextArrow.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.shape,
-  onClick: PropTypes.function
+  onClick: PropTypes.func
 };
 
 SampleNextArrow.defaultProps = {
   className: '',
-  style: null,
   onClick: null
 };
 
 const SamplePrevArrow = props => {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
 
-  return <div className={className} style={{ ...style, display: 'block' }} onClick={onClick} />;
+  return <div className={className} onClick={onClick} />;
 };
 
 SamplePrevArrow.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.shape,
-  onClick: PropTypes.function
+  onClick: PropTypes.func
 };
 
 SamplePrevArrow.defaultProps = {
   className: '',
-  style: {},
   onClick: null
 };
 
@@ -46,16 +42,21 @@ const CarDesignCarousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    nextArrow: <SampleNextArrow className="next-arrow" />,
+    prevArrow: <SamplePrevArrow className="prev-arrow" />
   };
 
   return (
     <Slider {...settings} className="design-carousel">
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
+      <div>
+        <CarouselItem />
+      </div>
+      <div>
+        <CarouselItem />
+      </div>
+      <div>
+        <CarouselItem />
+      </div>
     </Slider>
   );
 };

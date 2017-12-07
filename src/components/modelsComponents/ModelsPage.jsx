@@ -3,7 +3,7 @@ import ModelsList from '../../containers/modelsPage/ModelList';
 import Dropdown from '../modelsComponents/Dropdown';
 
 const ModelsPage = () => (
-  <div className="container">
+  <div>
     <Dropdown />
     <ModelsList />
   </div>

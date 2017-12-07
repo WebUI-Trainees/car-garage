@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 import ModelListItem from '../../components/modelsComponents/ModelListItem';
 
 const ModelsList = ({ carModels }) => (
-  <div className="row">
+  <div className="models-wrapper">
     {carModels.map(carModel => (
-      <div key={carModel.id} className="model-wrapper col-xs-12 col-sm-6 col-md-4 d-inline-blox">
+      <div key={carModel.id} className="single-model d-inline-block">
         <ModelListItem model={carModel} />
       </div>
     ))}
