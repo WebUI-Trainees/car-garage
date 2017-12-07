@@ -6,9 +6,12 @@ const ModelListItem = ({ model }) => {
   const path = () => `/model/${model.id}`;
 
   return (
-    <div className="model-container text-center">
-      <h3 className="model text-left">{model.name}</h3>
-      <h3 className="model text-left">{model.price}</h3>
+    <div className="model-container">
+      <h3 className="title">
+        {model.name}
+        <br />
+        <span className="price">{model.price}</span>
+      </h3>
       <div className="car-image">
         <img src={model.image} alt={model.model} />
       </div>
