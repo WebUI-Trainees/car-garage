@@ -12,8 +12,14 @@
     "lint": "npm run eslint"
   },
   "lint-staged": {
-    "*.js": ["npm run eslint", "git add"],
-    "*.jsx": ["npm run eslint", "git add"]
+    "*.js": [
+      "npm run eslint",
+      "git add"
+    ],
+    "*.jsx": [
+      "npm run eslint",
+      "git add"
+    ]
   },
   "author": "Stanimir Todorov",
   "license": "MIT",
@@ -63,6 +69,7 @@
     "react-router": "4.2.0",
     "react-router-dom": "^4.2.2",
     "react-simple-dropdown": "^3.2.0",
+    "react-slick": "^0.15.4",
     "redux": "3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-promise": "^0.5.3",
