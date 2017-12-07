@@ -204,7 +204,6 @@ a {
   padding: 0 0 0 10px;
   list-style: none;
 }
-
 /*SingleModel Page*/
 
 /* Mouse */
@@ -396,6 +395,33 @@ a {
   transform: skew(0, -5deg) translate(100px, 50px);
 }
 
+/* Link Section*/
+.single-link {
+  color: #deedee;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.single-link:hover {
+  text-decoration: none;
+  color: ghostwhite;
+}
+.single-link .image {
+  width: 100px;
+  height: 100px;
+}
+.single-link .image.configure {
+  background: url('/src/images/configure.svg') no-repeat center;
+}
+.single-link .image.buy {
+  background: url('/src/images/buy.svg') no-repeat center;
+}
+.single-link .image.test {
+  background: url('/src/images/info.svg') no-repeat center;
+}
+.single-link .title {
+  text-align: center;
+  font-size: 22px;
+}
 
 
 .slick-arrow.slick-next,
