@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SingleDate = ({ item, selectItem }) => (
-  <div onClick={() => selectItem(item)}>
+  <div className="single-date" onClick={() => selectItem(item)}>
     <p>{item.date}</p>
   </div>
 );

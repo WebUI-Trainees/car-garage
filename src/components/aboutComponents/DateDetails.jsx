@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const DateDetails = ({ selectedItem }) => (
-  <div>
-    <div>{selectedItem.text}</div>
-    <div>
+  <div className="details-container">
+    <div className="date-info">{selectedItem.text}</div>
+    <div className="about-image-container">
       <img alt="history" src={selectedItem.imageSrc} />
     </div>
   </div>
