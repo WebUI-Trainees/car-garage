@@ -1,6 +1,10 @@
 import React from 'react';
-// import { Carousel } from 'react-materialize';
+import Carousel from './homeComponents/Carousel';
 
-const HomePage = () => <div>Home Page</div>;
+const HomePage = () => (
+  <div>
+    <Carousel />
+  </div>
+);
 
 export default HomePage;

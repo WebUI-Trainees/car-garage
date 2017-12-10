@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 import SingleDate from './SingleDate';
 
 const DateList = props => (
-  <div>{props.items.map(item => <SingleDate selectItem={props.selectItem} key={uuid()} item={item} />)}</div>
+  <div className="dates-container">
+    {props.items.map(item => <SingleDate selectItem={props.selectItem} key={uuid()} item={item} />)}
+  </div>
 );
 
 DateList.propTypes = {
