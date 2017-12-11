@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-// import CarouselItem from './CarouselItem';
+import uuid from 'uuid';
+import CarouselItem from './CarouselItem';
 import getEvents from '../../actions/getEvents';
 
-const CarDesignCarousel = props => {
-  props.getEvents();
+const EventsCarousel = props => {
   const settings = {
     dots: true,
     infinite: true,
@@ -21,7 +21,11 @@ const CarDesignCarousel = props => {
 
   return (
     <Slider {...settings} className="design-carousel">
-      {/* <div>{props.events.map(event => <CarouselItem title={event.title} text={event.text} img={event.img} />)}</div> */}
+      {props.events.map(event => (
+        <div key={uuid()}>
+          <CarouselItem title={event.title} key={uuid()} text={event.text} img={event.img} />
+        </div>
+      ))}
     </Slider>
   );
 };
@@ -31,7 +35,7 @@ const mapStateToProps = state => ({
   events: state.events
 });
 
-CarDesignCarousel.propTypes = {
+EventsCarousel.propTypes = {
   getEvents: PropTypes.func.isRequired,
   events: PropTypes.arrayOf(
     PropTypes.shape({
@@ -47,9 +51,9 @@ CarDesignCarousel.propTypes = {
   })
 };
 
-CarDesignCarousel.defaultProps = {
+EventsCarousel.defaultProps = {
   events: [],
   event: {}
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CarDesignCarousel);
+export default connect(mapStateToProps, mapDispatchToProps)(EventsCarousel);
