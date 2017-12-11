@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const CarouselItem = () => (
+const CarouselItem = props => (
   <div className="carousel-item-wrapper home">
-    <img src="/src/images/home/offroad-event.jpg" alt="Mercedes" />
-    <div className="event-info">
+    <img src={props.events.img} alt="Mercedes" />
+    <div onClick={props.getEvents} className="event-info">
       <h3>Basic offroad training, Austria</h3>
       <p>
         Black ice, emergency stops or sudden evasive manoeuvres on slick roads – we will prepare you for the chilly
@@ -14,5 +15,20 @@ const CarouselItem = () => (
     </div>
   </div>
 );
+
+CarouselItem.propTypes = {
+  getEvents: PropTypes.func.isRequired,
+  events: PropTypes.arrayOf(
+    PropTypes.shape({
+      img: PropTypes.string,
+      title: PropTypes.string,
+      text: PropTypes.string
+    })
+  )
+};
+
+CarouselItem.defaultProps = {
+  events: []
+};
 
 export default CarouselItem;

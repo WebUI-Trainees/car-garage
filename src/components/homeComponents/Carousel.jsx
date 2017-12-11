@@ -1,8 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
-import CarouselItem from './CarouselItem';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+// import CarouselItem from './CarouselItem';
+import getEvents from '../../actions/getEvents';
 
-const CarDesignCarousel = () => {
+const CarDesignCarousel = props => {
+  props.getEvents();
   const settings = {
     dots: true,
     infinite: true,
@@ -11,22 +16,40 @@ const CarDesignCarousel = () => {
     slidesToScroll: 1,
     accessibility: true,
     autoplay: true,
-    autoplaySpeed: 5000
+    autoplaySpeed: 3000
   };
 
   return (
     <Slider {...settings} className="design-carousel">
-      <div>
-        <CarouselItem />
-      </div>
-      <div>
-        <CarouselItem />
-      </div>
-      <div>
-        <CarouselItem />
-      </div>
+      {/* <div>{props.events.map(event => <CarouselItem title={event.title} text={event.text} img={event.img} />)}</div> */}
     </Slider>
   );
 };
 
-export default CarDesignCarousel;
+const mapDispatchToProps = dispatch => bindActionCreators({ getEvents }, dispatch);
+const mapStateToProps = state => ({
+  events: state.events
+});
+
+CarDesignCarousel.propTypes = {
+  getEvents: PropTypes.func.isRequired,
+  events: PropTypes.arrayOf(
+    PropTypes.shape({
+      img: PropTypes.string,
+      title: PropTypes.string,
+      text: PropTypes.string
+    })
+  ),
+  event: PropTypes.shape({
+    img: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string
+  })
+};
+
+CarDesignCarousel.defaultProps = {
+  events: [],
+  event: {}
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CarDesignCarousel);
