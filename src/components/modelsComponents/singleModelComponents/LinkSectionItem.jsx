@@ -8,7 +8,11 @@ const LinkSectionItem = props => {
 
   return (
     <a className="d-inline-block single-link">
-      <div {...linkClasses} />
+      <div className="link-container">
+        <div className="image-wrapper">
+          <div {...linkClasses} />
+        </div>
+      </div>
       <p className="title">{children}</p>
     </a>
   );
