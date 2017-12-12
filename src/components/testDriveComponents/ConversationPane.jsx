@@ -22,12 +22,12 @@ class ConversationPane extends React.Component {
   // }
 
   get emptyMessage() {
-    return <h4>Select a Conversation from the Inbox</h4>;
+    return <h3>Select a Conversation from the Inbox</h3>;
   }
 
   get conversationComponent() {
     return [
-      <h1>Conversation</h1>,
+      <h1 id="font">Conversation</h1>,
       <h3>{this.props.humanId}</h3>,
       <div id="messages">{this.props.human.conversations.map(this.renderMessage)}</div>
     ];

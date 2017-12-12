@@ -7,8 +7,8 @@ import ConversationPane from '../../containers/testDriveComponents/ConversationP
 import StorePane from './StorePane';
 import Chat from './Chat';
 // import db from '../../sample-data';
-import { store } from '../../index';
-import { fatchConversations } from '../../actions';
+// import { store } from '../../index';
+// import { fatchConversations } from '../../actions';
 
 class TestDrivePage extends Component {
   constructor(props) {
@@ -34,10 +34,8 @@ class TestDrivePage extends Component {
 
   render() {
     return (
-      <div>
+      <div id="bckgd">
         <div id="header" />
-        <button onClick={this.loadSampleData}>Load Previous History</button>
-        <button onClick={() => store.dispatch(fatchConversations())}>Fetch Data</button>
         <div className="container">
           <InboxPane />
           <Switch>

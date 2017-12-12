@@ -635,7 +635,14 @@ header > div {
 
 /* TEST DRIVE PAGE */
 iframe {
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.76);
+=======
+	background-color: rgba(255, 255, 255, 0.76);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+>>>>>>> develop
 }
 .container {
   display: flex;
@@ -651,8 +658,13 @@ iframe {
   margin-top: 0px;
 }
 
+#font {
+  font-family: 'Fredericka the Great';font-size: 30px;
+}
+
 /* INBOX PANE */
 #inbox-pane {
+<<<<<<< HEAD
   background-color: #6aa0a6;
   position: relative;
 }
@@ -662,6 +674,22 @@ iframe {
   top: 1em;
   right: 1em;
   cursor: pointer;
+=======
+	background-color: #38b8c9;
+	border-radius:10px;
+	position: relative;
+	color: #1c5568;
+}
+
+#inbox-pane .refresh {
+	position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  background:url("/src/images/driveAssets/refresh.png") no-repeat; 
+  width:32px; 
+  height:32px;
+>>>>>>> develop
 }
 
 #inbox-pane > table {
@@ -669,15 +697,28 @@ iframe {
 }
 
 #inbox-pane > div {
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.5);
   list-style: none;
   padding: 10px 20px;
   margin: 5px;
+=======
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+	list-style: none;
+	padding: 10px 20px;
+	margin: 5px;
+>>>>>>> develop
 }
 
 /* CONVERSATION PANE */
 #conversation-pane {
+<<<<<<< HEAD
   background-color: #999999;
+=======
+	border-radius:10px;
+	background-color: #868686;
+>>>>>>> develop
 }
 
 #conversation-pane #messages p {
@@ -697,6 +738,7 @@ iframe {
 
 /* STORES PANE */
 #stores-pane {
+<<<<<<< HEAD
   background-color: #c4925d;
 }
 
@@ -723,6 +765,26 @@ iframe {
   font-weight: bold;
   font-size: 20pt;
   vertical-align: middle;
+=======
+	border-radius:10px;
+	background-color: #1c5568;
+	color:#38b8c9;
+}
+
+#stores-pane .store {
+	background-color: #ffffff48;
+	color: #ffffff;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+	display: flex;
+}
+
+#stores-pane .store .orders {
+	display: flex;
+	font-size: 15pt;
+	vertical-align: middle;
+	padding-left: 10px;
+>>>>>>> develop
 }
 
 #stores-pane .store .orders > div {
