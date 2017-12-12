@@ -1,11 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import uuid from 'uuid';
 import CarouselItem from './CarouselItem';
-import getEvents from '../../actions/getEvents';
 
 const EventsCarousel = props => {
   const settings = {
@@ -30,13 +28,11 @@ const EventsCarousel = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => bindActionCreators({ getEvents }, dispatch);
 const mapStateToProps = state => ({
   events: state.events
 });
 
 EventsCarousel.propTypes = {
-  getEvents: PropTypes.func.isRequired,
   events: PropTypes.arrayOf(
     PropTypes.shape({
       img: PropTypes.string,
@@ -56,4 +52,4 @@ EventsCarousel.defaultProps = {
   event: {}
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EventsCarousel);
+export default connect(mapStateToProps)(EventsCarousel);
