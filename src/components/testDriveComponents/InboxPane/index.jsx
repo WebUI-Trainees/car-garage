@@ -19,10 +19,8 @@ class InboxPane extends Component {
   render() {
     return (
       <div id="inbox-pane" className="column inboxPane">
-        <h1>Inbox</h1>
-        <span onClick={() => this.componentDidMount()} className="refresh">
-          R
-        </span>
+        <h1 id="font">Inbox</h1>
+        <span onClick={() => this.componentDidMount()} className="refresh" />
         {this.props.humans.map(this.renderConvoSum)}
       </div>
     );
