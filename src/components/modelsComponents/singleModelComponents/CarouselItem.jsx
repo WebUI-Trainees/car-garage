@@ -1,13 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const CarouselItem = () => (
+const CarouselItem = ({ data }) => (
   <div className="carousel-item-wrapper">
-    <p className="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus necessitatibus at nisi saepe nihil, molestias,
-      distinctio obcaecati nemo iusto eos quos, maxime accusamus? Nemo facilis voluptate nam, est reiciendis quis?Lorem
-      sit amet consectetur adipisicing elit.
-    </p>
+    <div className="background-image-container">
+      <img src={data.image} alt={data.description} />
+    </div>
+    <p className="description">{data.text}</p>
   </div>
 );
+
+CarouselItem.propTypes = {
+  data: PropTypes.shape({
+    image: PropTypes.string,
+    description: PropTypes.string,
+    text: PropTypes.string
+  }).isRequired
+};
 
 export default CarouselItem;
