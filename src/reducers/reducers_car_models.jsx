@@ -84,7 +84,7 @@ const defaultState = [
   {
     id: 'gla-suv',
     name: 'The GLA Class',
-    model: 'GLA Class',
+    model: 'GLA class',
     image: `${IMAGES_DIRECTORY}gla-suv.jpg`,
     price: '110 000$'
   },
@@ -105,7 +105,7 @@ const defaultState = [
   {
     id: 'gle-coupe',
     name: 'The GLE Class',
-    model: 'GLE Class',
+    model: 'GLE class',
     image: `${IMAGES_DIRECTORY}gle-coupe.jpg`,
     price: '110 000$'
   },
