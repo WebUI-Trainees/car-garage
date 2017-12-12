@@ -15,8 +15,8 @@ class StorePane extends Component {
   render() {
     return (
       <div id="stores-pane" className="column">
-        <h1>Test Drive Status</h1>
-        <ul>{Object.keys(this.props.stores).map(this.renderStore)}</ul>
+        <h1 id="font">Information</h1>
+        <Store />
       </div>
     );
   }
