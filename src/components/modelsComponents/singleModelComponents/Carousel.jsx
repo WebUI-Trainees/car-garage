@@ -47,7 +47,7 @@ const CarDesignCarousel = () => {
   };
 
   return (
-    <Slider {...settings} className="design-carousel">
+    <Slider {...settings} className="car-information">
       <div>
         <CarouselItem />
       </div>

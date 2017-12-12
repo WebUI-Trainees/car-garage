@@ -6,12 +6,11 @@ import VideoSection from './singleModelComponents/VideoSection';
 import LinksSection from './singleModelComponents/LinksSection';
 import QuoteSection from './singleModelComponents/QuoteSection';
 
-const ModelPage = ({ match }) => (
+const ModelPage = () => (
   <div>
     <VideoSection />
     <QuoteSection />
     <CarDesignCarousel />
-    <h3>ID: {match.params.id}</h3>
     <LinksSection />
   </div>
 );
