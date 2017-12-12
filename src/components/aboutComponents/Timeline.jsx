@@ -12,7 +12,9 @@ const Timeline = props => {
 
   return (
     <div className="slider">
+      <h2>Timeline</h2>
       <Slider min={0} max={items.length - 1} value={props.selectedItem.id} onChange={handleChange} />
+      <p>{props.selectedItem.date}</p>
     </div>
   );
 };
@@ -27,7 +29,8 @@ Timeline.propTypes = {
     })
   ).isRequired,
   selectedItem: PropTypes.shape({
-    id: PropTypes.string.isRequired
+    id: PropTypes.number.isRequired,
+    date: PropTypes.string.isRequired
   }).isRequired
 };
 
