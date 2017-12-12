@@ -8,9 +8,6 @@ const Store = () => (
         <p>
           This is the test drive SSBenz page. If you want to test one of our Mercedes-Benz models you can use the chat
           to register for test drive. For more information type `help` in chatbox.
-        <p>
-          This is the test drive SSBenz page. Use the chat to register for test drive. For more info type `help` in
-          chatbox.
         </p>
       </div>
     </div>

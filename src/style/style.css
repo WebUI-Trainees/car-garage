@@ -669,15 +669,6 @@ iframe {
 
 /* INBOX PANE */
 #inbox-pane {
-  background-color: #6aa0a6;
-  position: relative;
-}
-
-#inbox-pane .refresh {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  cursor: pointer;
 	background-color: #38b8c9;
 	border-radius:10px;
 	position: relative;
@@ -695,36 +686,21 @@ iframe {
 }
 
 #inbox-pane > table {
-  text-align: left;
+	text-align: left;
 }
 
 #inbox-pane > div {
-
-  background-color: rgba(255, 255, 255, 0.5);
-  list-style: none;
-  padding: 10px 20px;
-  margin: 5px;
-
 	background-color: rgba(255, 255, 255, 0.5);
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 	list-style: none;
 	padding: 10px 20px;
 	margin: 5px;
-
 }
 
 /* CONVERSATION PANE */
 #conversation-pane {
-
 	border-radius:10px;
-	background-color: #868686;
-=======
-
   background-color: #999999;
-
-	border-radius:10px;
-	background-color: #868686;
-
 }
 
 #conversation-pane #messages p {
@@ -748,13 +724,10 @@ iframe {
 
 /* STORES PANE */
 #stores-pane {
-
 	border-radius:10px;
 	background-color: #1c5568;
 	color:#38b8c9;
 }
-
-
 
 #stores-pane .store {
 	background-color: #ffffff2d;
@@ -769,55 +742,10 @@ iframe {
 	font-size: 13pt;
 	vertical-align: middle;
 	padding-left: 10px;
-  background-color: #c4925d;
-}
-
-#stores-pane > ul {
-  padding-left: 0px;
-  list-style: none;
-}
-
-#stores-pane .store {
-  background-color: #f2dfa7;
-  margin-bottom: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-  display: flex;
-}
-
-.store > .name {
-  font-weight: bold;
-  flex: 1;
-  padding: 6px;
-}
-
-#stores-pane .store .orders {
-  display: flex;
-  font-weight: bold;
-  font-size: 20pt;
-  vertical-align: middle;
-=======
-	border-radius:10px;
-	background-color: #1c5568;
-	color:#38b8c9;
-}
-
-#stores-pane .store {
-	background-color: #ffffff48;
-	color: #ffffff;
-	margin-bottom: 10px;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-	display: flex;
-}
-
-#stores-pane .store .orders {
-	display: flex;
-	font-size: 15pt;
-	vertical-align: middle;
-	padding-left: 10px;
 }
 
 #stores-pane .store .orders > div {
-  padding-right: 8px;
-  display: flex;
-  align-items: center;
+	padding-right: 8px;
+	display: flex;
+	align-items: center;
 }
