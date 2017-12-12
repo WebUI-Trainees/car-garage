@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NotFoundPage from '../components/common/NotFoundPage';
 import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
 import HomePage from '../components/HomePage';
 import AboutPage from '../components/AboutPage';
 import GaragePage from '../components/GaragePage';
@@ -22,6 +23,7 @@ const AppRouter = () => (
         <Route path="/model/:id" component={ModelPage} />
         <Route component={NotFoundPage} />
       </Switch>
+      <Footer />
     </div>
   </BrowserRouter>
 );
