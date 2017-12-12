@@ -1,18 +1,44 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const CarouselItem = () => (
-  <div className="carousel-item-wrapper home">
-    <img src="/src/images/home/offroad-event.jpg" alt="Mercedes" />
-    <div className="event-info">
-      <h3>Basic offroad training, Austria</h3>
-      <p>
-        Black ice, emergency stops or sudden evasive manoeuvres on slick roads – we will prepare you for the chilly
-        season in a fantastic Alpine setting. What do you do when your car starts to skid? What’s the right way to brake
-        on icy roads? Learn to keep a cool head and to control your vehicle confidently even in surprising situations on
-        the 120,000-square-meter ice arena in the Austrian driving training centre in Saalfelden.
-      </p>
-    </div>
-  </div>
-);
+class CarouselItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleAttendance = this.handleAttendance.bind(this);
+    this.state = {
+      attending: true
+    };
+  }
+  handleAttendance() {
+    this.setState(prevState => ({
+      attending: !prevState.attending
+    }));
+  }
+
+  render() {
+    return (
+      <div className="carousel-item-wrapper home">
+        <img src={this.props.img} alt="Mercedes" />
+        <div className="event-info">
+          <h3>{this.props.title}</h3>
+          <p>{this.props.text}</p>
+          <div className="event-attend">
+            <input
+              type="button"
+              value={this.state.attending ? 'Attend' : 'Cancel Attendance'}
+              onClick={this.handleAttendance}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+CarouselItem.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
+};
 
 export default CarouselItem;
