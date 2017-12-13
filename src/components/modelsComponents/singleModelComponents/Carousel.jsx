@@ -35,7 +35,7 @@ SamplePrevArrow.defaultProps = {
   onClick: null
 };
 
-const CarDesignCarousel = () => {
+const CarDesignCarousel = ({ carDetails }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -46,19 +46,26 @@ const CarDesignCarousel = () => {
     prevArrow: <SamplePrevArrow className="prev-arrow" />
   };
 
+  const carouselContent = carDetails.map(carDetail => (
+    <div key={carDetail.description}>
+      <CarouselItem data={carDetail} />
+    </div>
+  ));
+
   return (
     <Slider {...settings} className="car-information">
-      <div>
-        <CarouselItem />
-      </div>
-      <div>
-        <CarouselItem />
-      </div>
-      <div>
-        <CarouselItem />
-      </div>
+      {carouselContent}
     </Slider>
   );
+};
+
+CarDesignCarousel.propTypes = {
+  carDetails: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string,
+      text: PropTypes.string
+    })
+  ).isRequired
 };
 
 export default CarDesignCarousel;
