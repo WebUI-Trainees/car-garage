@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const VideoSection = () => (
+const VideoSection = ({ name }) => (
   <section className="video-section-wrapper">
     <div className="video-background-container">
       <div className="cover-video">
@@ -18,7 +19,7 @@ const VideoSection = () => (
     </div>
     <div className="video-content-wrapper">
       <div className="heading-content">
-        <div className="model-name">The BMW 2 Series Convertible</div>
+        <div className="model-name">{name}</div>
       </div>
       <div className="mouse-scroll-icon-wrapper">
         <div className="mouse">
@@ -29,4 +30,7 @@ const VideoSection = () => (
   </section>
 );
 
+VideoSection.propTypes = {
+  name: PropTypes.string.isRequired
+};
 export default VideoSection;

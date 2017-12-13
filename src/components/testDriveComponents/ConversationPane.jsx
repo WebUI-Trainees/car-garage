@@ -22,7 +22,12 @@ class ConversationPane extends React.Component {
   // }
 
   get emptyMessage() {
-    return <h3>Select a Conversation from the Inbox</h3>;
+    return (
+      <div>
+        <h2 id="conversation-heading">Select a Conversation from the Inbox</h2>
+        <img alt="" src="/src/images/driveAssets/select.png" width="150" />
+      </div>
+    );
   }
 
   get conversationComponent() {

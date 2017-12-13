@@ -1,12 +1,7 @@
 import React from 'react';
-import ModelsList from '../../containers/modelsPage/ModelList';
-import Dropdown from '../modelsComponents/Dropdown';
 
-const ModelsPage = () => (
-  <div>
-    <Dropdown />
-    <ModelsList />
-  </div>
-);
+import CarModelsSection from '../../containers/carModelsComponents/CarModelsSection';
+
+const ModelsPage = () => <CarModelsSection />;
 
 export default ModelsPage;
