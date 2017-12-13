@@ -43,6 +43,7 @@ const contactLinks = [
       </li>
     </ul>
   </div>
+];
 
 const Footer = () => (
   <footer>
