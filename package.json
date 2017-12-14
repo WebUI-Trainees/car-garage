@@ -16,8 +16,14 @@
 		"heroku-postbuild": "yarn run build:prod"
 	},
 	"lint-staged": {
-		"*.js": ["npm run eslint", "git add"],
-		"*.jsx": ["npm run eslint", "git add"]
+		"*.js": [
+			"npm run eslint",
+			"git add"
+		],
+		"*.jsx": [
+			"npm run eslint",
+			"git add"
+		]
 	},
 	"author": "Stanimir Todorov",
 	"license": "MIT",
@@ -63,6 +69,7 @@
 		"react-addons-pure-render-mixin": "^15.6.2",
 		"react-dom": "16.1.1",
 		"react-materialize": "^1.1.0",
+		"react-modal": "^3.1.8",
 		"react-rangeslider": "^2.2.0",
 		"react-redux": "5.0.6",
 		"react-router": "4.2.0",
