@@ -7,12 +7,13 @@ const defaultState = [
     model: 'A Class',
     image: `${IMAGES_DIRECTORY}/models/a-class-saloon.jpg`,
     price: '50 000$',
-    quote: 'some quote here',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/a-class-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
@@ -28,7 +29,7 @@ const defaultState = [
     model: 'B class',
     image: `${IMAGES_DIRECTORY}/models/b-class-tourer.jpg`,
     price: '60 000$',
-    quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -49,7 +50,7 @@ const defaultState = [
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-cabrio.jpg`,
     price: '65 000$',
-    quote: 'put some quote here',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -70,7 +71,7 @@ const defaultState = [
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-coupe.jpg`,
     price: '80 000$',
-    quote: 'some quote about this page',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -91,7 +92,7 @@ const defaultState = [
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-saloon.jpg`,
     price: '80 000$',
-    quote: 'quote quote quote',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -112,8 +113,7 @@ const defaultState = [
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-t-model-estate.jpg`,
     price: '75 000$',
-    quote:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laboriosam odio dolor, cupiditate error voluptatibus, unde reiciendis.',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -134,7 +134,7 @@ const defaultState = [
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-all-terrain.jpg`,
     price: '80 000$',
-    quote: 'qqqqqqqqoooooooootttttttttttteeeeeeeeeeeee',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -155,7 +155,7 @@ const defaultState = [
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-coupe.jpg`,
     price: '85 000$',
-    quote: 'some quote',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -176,7 +176,7 @@ const defaultState = [
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-estate.jpg`,
     price: '80 000$',
-    quote: 'some quote here',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -197,7 +197,7 @@ const defaultState = [
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-saloon.jpg`,
     price: '90 000$',
-    quote: 'some quote',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -218,7 +218,7 @@ const defaultState = [
     model: 'G class',
     image: `${IMAGES_DIRECTORY}/models/g-class-cross-country-automobile.jpg`,
     price: '85 000$',
-    quote: 'some quote .......',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -239,7 +239,7 @@ const defaultState = [
     model: 'GLA class',
     image: `${IMAGES_DIRECTORY}/models/gla-suv.jpg`,
     price: '110 000$',
-    quote: '.........quote........',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -260,7 +260,7 @@ const defaultState = [
     model: 'GLC class',
     image: `${IMAGES_DIRECTORY}/models/glc-coupe.jpg`,
     price: '100 000$',
-    quote: 'quote quote quote',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -281,7 +281,7 @@ const defaultState = [
     model: 'GLC class',
     image: `${IMAGES_DIRECTORY}/models/glc-suv.jpg`,
     price: '100 000$',
-    quote: 'some quote here',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -302,7 +302,7 @@ const defaultState = [
     model: 'GLE class',
     image: `${IMAGES_DIRECTORY}/models/gle-coupe.jpg`,
     price: '110 000$',
-    quote: 'some quote',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -323,7 +323,7 @@ const defaultState = [
     model: 'GLE class',
     image: `${IMAGES_DIRECTORY}/models/gle-suv.jpg`,
     price: '100 000$',
-    quote: 'suv quote',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -344,7 +344,7 @@ const defaultState = [
     model: 'GLS class',
     image: `${IMAGES_DIRECTORY}/models/gls-suv.jpg`,
     price: '100 000$',
-    quote: 'some quote here',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
@@ -365,7 +365,7 @@ const defaultState = [
     model: 'S class',
     image: `${IMAGES_DIRECTORY}/models/s-class-saloon.jpg`,
     price: '100 000$',
-    quote: 'Some quote',
+    quote: 'The Best or nothing...',
     carDescription: [
       {
         description: 'exterior',
