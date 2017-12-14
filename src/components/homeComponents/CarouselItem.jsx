@@ -1,17 +1,47 @@
+import { setTimeout } from 'timers';
 import React from 'react';
 import PropTypes from 'prop-types';
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    background: '#455A64',
+    color: 'white',
+    fontStyle: 'italic'
+  }
+};
 
 class CarouselItem extends React.Component {
   constructor(props) {
     super(props);
     this.handleAttendance = this.handleAttendance.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
     this.state = {
-      attending: true
+      attending: false,
+      modalIsOpen: false
     };
   }
+
+  openModal() {
+    this.setState(prevState => ({ modalIsOpen: true, attending: !prevState.attending }));
+    setTimeout(this.closeModal, 2000);
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  }
+
   handleAttendance() {
     this.setState(prevState => ({
-      attending: !prevState.attending
+      attending: !prevState.attending,
+      modalIsOpen: true
     }));
   }
 
@@ -23,13 +53,24 @@ class CarouselItem extends React.Component {
           <h3>{this.props.title}</h3>
           <p>{this.props.text}</p>
           <div className="event-attend">
+            {this.state.modalIsOpen}
             <input
               type="button"
-              value={this.state.attending ? 'Attend' : 'Cancel Attendance'}
-              onClick={this.handleAttendance}
+              value={this.state.attending ? 'Cancel Attendance' : 'Attend'}
+              onClick={this.openModal}
             />
           </div>
         </div>
+        <Modal
+          isOpen={this.state.modalIsOpen}
+          onRequestClose={this.closeModal}
+          closeTimeoutMS={200}
+          style={customStyles}
+          contentLabel="Modal"
+          ariaHideApp={false}
+        >
+          <h1>{this.state.attending ? 'Your spot will be reserved!' : 'We are sorry to lose you!'}</h1>
+        </Modal>
       </div>
     );
   }
