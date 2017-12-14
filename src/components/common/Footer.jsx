@@ -17,10 +17,6 @@ const socialLinks = [
         <span className="fa fa-google" />
         <span>Add us on Google+</span>
       </li>
-      <li>
-        <span className="fa fa-linkedin" />
-        <span>Follow us on LinkedIn</span>
-      </li>
     </ul>
   </div>
 ];

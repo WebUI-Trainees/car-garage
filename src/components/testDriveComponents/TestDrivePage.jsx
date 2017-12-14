@@ -4,33 +4,17 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import InboxPane from '../../containers/testDriveComponents/InboxPane';
 import ConversationPane from '../../containers/testDriveComponents/ConversationPane';
-import StorePane from './StorePane';
+import InfoPane from './InfoPane';
 import Chat from './Chat';
-// import db from '../../sample-data';
-// import { store } from '../../index';
-// import { fatchConversations } from '../../actions';
 
 class TestDrivePage extends Component {
   constructor(props) {
     super(props);
 
-    // this.loadSampleData = this.loadSampleData.bind(this);
-
     this.state = {
       stores: {}
     };
   }
-
-  // Handle when user navigates to a conversation directly without first loading the index...
-  // componentWillMount() {
-  //   if ('human' in this.props.match.params) {
-  //     this.loadSampleData();
-  //   }
-  // }
-
-  // loadSampleData() {
-  //   this.setState(db);
-  // }
 
   render() {
     return (
@@ -45,7 +29,7 @@ class TestDrivePage extends Component {
               component={props => <ConversationPane humanId={props.match.params.humanId} />}
             />
           </Switch>
-          <StorePane stores={this.state.stores} />
+          <InfoPane stores={this.state.stores} />
         </div>
         <Chat />
       </div>
