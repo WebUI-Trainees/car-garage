@@ -13,7 +13,7 @@ const ModelPage = ({ model }) => (
     <VideoSection name={model.name} />
     <QuoteSection quote={model.quote} />
     <CarDesignCarousel carDetails={model.carDescription} />
-    <LinksSection />
+    <LinksSection modelId={model.id} />
   </div>
 );
 

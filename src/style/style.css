@@ -28,10 +28,10 @@ a {
   position: relative;
   height: 45px;
   min-width: 175px;
-  background: #00b7d3;
+  background: radial-gradient(grey 0%, black 100%);
   border-radius: 10px;
-  border: 1px solid;
 }
+
 .button-with-icon .icon {
   position: absolute;
   top: 0;
@@ -39,9 +39,10 @@ a {
   width: 45px;
   height: 100%;
   padding: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background: #000;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  background: #fff;
+  border: 2px solid black;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -50,26 +51,29 @@ a {
 .button-with-icon .icon:after {
   content: '';
   position: absolute;
-  top: 13px;
-  left: 45px;
+  top: 12px;
+  left: 41px;
   height: 15px;
   width: 15px;
   border-bottom: 10px solid transparent;
   border-top: 10px solid transparent;
-  border-left: 7px solid #000;
+  border-left: 7px solid #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .button-with-icon .icon .icon-image {
   width: 100%;
   height: 100%;
-  background: url('/src/images/info-blue.svg') no-repeat center;
+  background: url('/src/images/info.svg') no-repeat center;
 }
+
 .button-with-icon .button-text {
   margin: 0;
   padding: 10px 0 0 45px;
   font-size: 21px;
+  color: white;
   line-height: 27px;
   font-weight: bold;
 }
@@ -80,15 +84,18 @@ a {
   padding: -4px;
   border-radius: 10px;
 }
+
 .square-button .icon {
   width: 100%;
   height: 100%;
 }
+
 .square-button .icon.buy {
-  background: url('/src/images/buy-blue.svg') no-repeat center;
+  background: url('/src/images/buy.svg') no-repeat center;
 }
+
 .square-button .icon.configure {
-  background: url('/src/images/configure-blue.svg') no-repeat center;
+  background: url('/src/images/configure.svg') no-repeat center;
 }
 
 .buttons-container .button-with-icon,
@@ -652,7 +659,6 @@ header > div {
 /*Quote Section*/
 
 .quote-section {
-  margin-bottom: 30px;
   padding: 35px 50px;
   background: black;
 }
