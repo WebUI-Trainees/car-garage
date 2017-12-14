@@ -5,6 +5,8 @@ import CarModels from '../reducers/reducers_car_models';
 import humans from '../reducers/humans';
 import conversation from '../reducers/conversation';
 import EventsReducer from '../reducers/events';
+import cartReducer from '../reducers/cart';
+import productsReducer from '../reducers/products';
 
 const rootReducer = combineReducers({
   selectedItem: ItemReducer,
@@ -12,7 +14,9 @@ const rootReducer = combineReducers({
   carModels: CarModels,
   humans,
   conversation,
-  events: EventsReducer
+  events: EventsReducer,
+  cart: cartReducer,
+  products: productsReducer
 });
 
 export default rootReducer;
