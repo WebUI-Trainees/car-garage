@@ -112,6 +112,9 @@ a {
 .carousel-item-wrapper.home {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .carousel-item-wrapper.home > img {
@@ -179,12 +182,17 @@ header > div {
   cursor: pointer;
 }
 
+.design-carousel {
+  margin-bottom: 50px;
+}
+
 /*About Page*/
 
 .about-second-row {
   display: flex;
   justify-content: space-around;
   margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .about-second-row img {
@@ -550,7 +558,8 @@ header > div {
 }
 
 /*Carousel Section*/
-.slick-next:before, .slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
   font-size: 60px;
 }
 .car-information .slick-arrow.slick-next,
@@ -614,7 +623,7 @@ header > div {
   transform-origin: 0 0;
   transition-delay: 1s;
   top: 110px;
-  left: 235px
+  left: 235px;
 }
 
 .carousel-item-wrapper .description:after {
@@ -649,8 +658,6 @@ header > div {
   font-size: 50px;
   font-weight: 700;
 }
-
-
 
 /* Link Section*/
 
