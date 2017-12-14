@@ -13,6 +13,7 @@ const ModelListItem = ({ model }) => {
         {model.name}
         <br />
         <span className="price">{model.price}</span>
+        <span className="price">€</span>
       </h3>
       <div className="car-image">
         <img src={model.image} alt={model.model} />
