@@ -34,13 +34,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/b-class-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/b-class-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
       }
     ]
   },
@@ -55,13 +56,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-cabrio-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-cabrio-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one.'
       }
     ]
   },
@@ -76,13 +78,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-coupe-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-coupe-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
       }
     ]
   },
@@ -97,13 +100,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-limo-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-limo-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with.The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with.The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
       }
     ]
   },
@@ -118,13 +122,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-t-model-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/c-class-t-model-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with.'
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       }
     ]
   },
@@ -139,13 +144,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-all-terrain-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-all-terrain-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
       }
     ]
   },
@@ -160,13 +166,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-coupe-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-coupe-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
       }
     ]
   },
@@ -181,13 +188,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-t-model-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-t-model-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       }
     ]
   },
@@ -202,13 +210,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-limo-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/e-class-limo-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
       }
     ]
   },
@@ -223,13 +232,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/g-class-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/g-class-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'The interior is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
       }
     ]
   },
@@ -244,13 +254,14 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/gla-class-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
         image: `${IMAGES_DIRECTORY}/car-view/gla-class-in.jpg`,
         text:
-          'The interior of the A-Class is a completely new departure, and revolutionises the compact class from the inside with a new feeling of spaciousness. The unique architecture is particularly marked by the avantgarde design of the dashboard. For the first time a cowl above the cockpit has been completely dispensed with. As a result, the wing-shaped main body of the dashboard extends from one front door to the other with no visual discontinuity. The standard widescreen cockpit is completely free-standing. The sporty air vents in a turbine-look are another highlight. The front seats have comfort features available from higher segments, including seat climate control, massage function and multicontour seat. The newly designed 3-spoke steering wheel, door handles, centre console and seats follow a modern design idiom.'
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       }
     ]
   },
@@ -265,7 +276,8 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/glc-class-coupe-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
@@ -286,7 +298,8 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/glc-class-suv-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
@@ -307,7 +320,8 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/gle-class-coupe-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
@@ -328,7 +342,8 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/gle-class-suv-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
@@ -349,7 +364,8 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/gls-class-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
@@ -370,7 +386,8 @@ const defaultState = [
       {
         description: 'exterior',
         image: `${IMAGES_DIRECTORY}/car-view/s-class-ex.jpg`,
-        text: 'Striking, youthful, dynamic.Fits no stereotype. But perfectly fits into your life.'
+        text:
+          'It’s a good looking design, with a lot going on: rising swage lines, bonnet creases, LED clusters… you certainly couldn’t call it anonymous. It’s especially head-turning with optional big wheels, black glossy bits, pointy ‘Sport’ grille and huge sunroof. It’s just been facelifted, note, but it’s all pretty subtle stuff.'
       },
       {
         description: 'interior',
