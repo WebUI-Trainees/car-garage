@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 const ModelListItem = ({ model }) => {
   const path = () => `/model/${model.id}`;
+  const pathGarage = '/garage';
+  const pathBuy = '/garage';
 
   return (
     <div className="model-container">
@@ -24,16 +26,16 @@ const ModelListItem = ({ model }) => {
             <p className="button-text">View more</p>
           </div>
         </Link>
-        <a className="d-inline-block">
+        <Link className="d-inline-block" to={pathGarage}>
           <div className="square-button">
             <div className="icon configure" />
           </div>
-        </a>
-        <a className="d-inline-block">
+        </Link>
+        <Link className="d-inline-block" to={pathBuy}>
           <div className="square-button">
             <div className="icon buy" />
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
