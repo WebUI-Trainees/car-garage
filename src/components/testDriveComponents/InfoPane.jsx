@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Store from './Store';
+import Info from './Info';
 
-class StorePane extends Component {
+class InfoPane extends Component {
   constructor(props) {
     super(props);
-    this.renderStore = this.renderStore.bind(this);
+    this.renderInfo = this.renderInfo.bind(this);
   }
 
-  renderStore(store) {
-    return <Store key={store} index={store} details={this.props.stores[store]} />;
+  renderInfo(info) {
+    return <Info details={this.props.stores[info]} />;
   }
 
   render() {
     return (
       <div id="stores-pane" className="column">
         <h1 id="font">Information</h1>
-        <Store />
+        <Info />
       </div>
     );
   }
 }
 
-StorePane.propTypes = {
+InfoPane.propTypes = {
   stores: PropTypes.shape({
     orders: PropTypes.arrayOf(
       PropTypes.shape({
@@ -34,4 +34,4 @@ StorePane.propTypes = {
   }).isRequired
 };
 
-export default StorePane;
+export default InfoPane;
