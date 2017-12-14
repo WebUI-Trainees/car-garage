@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import uuid from 'uuid';
 import Message from './Message';
 import Human from '../../common/types';
 
@@ -19,14 +20,18 @@ class ConversationPane extends React.Component {
 
   get conversationComponent() {
     return [
-      <h1 id="font">Conversation</h1>,
-      <h3>{this.props.humanId}</h3>,
-      <div id="messages">{this.props.human.conversations.map(this.renderMessage)}</div>
+      <h1 id="font" key={uuid()}>
+        Conversation
+      </h1>,
+      <h3 key={uuid()}>{this.props.humanId}</h3>,
+      <div key={uuid()} id="messages">
+        {this.props.human.conversations.map(this.renderMessage)}
+      </div>
     ];
   }
 
-  renderMessage(val, idx) {
-    return <Message who={val.who} text={val.text} key={idx} />;
+  renderMessage(val) {
+    return <Message who={val.who} text={val.text} key={uuid()} />;
   }
 
   render() {
