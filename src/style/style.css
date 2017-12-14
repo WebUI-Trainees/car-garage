@@ -556,7 +556,6 @@ header > div {
 .car-information .slick-arrow.slick-next,
 .car-information .slick-arrow.slick-prev {
   z-index: 100;
-  background: black;
   border-radius: 70%;
 }
 
