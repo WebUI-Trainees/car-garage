@@ -6,7 +6,7 @@ const defaultState = [
     name: 'The A Class',
     model: 'A Class',
     image: `${IMAGES_DIRECTORY}/models/a-class-saloon.jpg`,
-    price: '50 000$',
+    price: '50 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -28,7 +28,7 @@ const defaultState = [
     name: 'The B Class',
     model: 'B class',
     image: `${IMAGES_DIRECTORY}/models/b-class-tourer.jpg`,
-    price: '60 000$',
+    price: '60 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -49,7 +49,7 @@ const defaultState = [
     name: 'The C Class Cabriolet',
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-cabrio.jpg`,
-    price: '65 000$',
+    price: '65 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -70,7 +70,7 @@ const defaultState = [
     name: 'The C Class Coupe',
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-coupe.jpg`,
-    price: '80 000$',
+    price: '80 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -91,7 +91,7 @@ const defaultState = [
     name: 'The C Class Saloon',
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-saloon.jpg`,
-    price: '80 000$',
+    price: '80 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -112,7 +112,7 @@ const defaultState = [
     name: 'The C Class T- Model',
     model: 'C class',
     image: `${IMAGES_DIRECTORY}/models/c-class-t-model-estate.jpg`,
-    price: '75 000$',
+    price: '75 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -133,7 +133,7 @@ const defaultState = [
     name: 'The E Class All Terrain',
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-all-terrain.jpg`,
-    price: '80 000$',
+    price: '80 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -154,7 +154,7 @@ const defaultState = [
     name: 'The E Class Coupe',
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-coupe.jpg`,
-    price: '85 000$',
+    price: '85 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -175,7 +175,7 @@ const defaultState = [
     name: 'The E Class T- Model',
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-estate.jpg`,
-    price: '80 000$',
+    price: '80 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -196,7 +196,7 @@ const defaultState = [
     name: 'The E Class Saloon',
     model: 'E class',
     image: `${IMAGES_DIRECTORY}/models/e-class-saloon.jpg`,
-    price: '90 000$',
+    price: '90 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -217,7 +217,7 @@ const defaultState = [
     name: 'The G Class',
     model: 'G class',
     image: `${IMAGES_DIRECTORY}/models/g-class-cross-country-automobile.jpg`,
-    price: '85 000$',
+    price: '85 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -238,7 +238,7 @@ const defaultState = [
     name: 'The GLA Class',
     model: 'GLA class',
     image: `${IMAGES_DIRECTORY}/models/gla-suv.jpg`,
-    price: '110 000$',
+    price: '110 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -259,7 +259,7 @@ const defaultState = [
     name: 'The GLC Class Coupe',
     model: 'GLC class',
     image: `${IMAGES_DIRECTORY}/models/glc-coupe.jpg`,
-    price: '100 000$',
+    price: '100 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -280,7 +280,7 @@ const defaultState = [
     name: 'The GLC Class SUV',
     model: 'GLC class',
     image: `${IMAGES_DIRECTORY}/models/glc-suv.jpg`,
-    price: '100 000$',
+    price: '100 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -301,7 +301,7 @@ const defaultState = [
     name: 'The GLE Class Coupe',
     model: 'GLE class',
     image: `${IMAGES_DIRECTORY}/models/gle-coupe.jpg`,
-    price: '110 000$',
+    price: '110 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -322,7 +322,7 @@ const defaultState = [
     name: 'The GLE Class SUV',
     model: 'GLE class',
     image: `${IMAGES_DIRECTORY}/models/gle-suv.jpg`,
-    price: '100 000$',
+    price: '100 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -343,7 +343,7 @@ const defaultState = [
     name: 'The GLS Class',
     model: 'GLS class',
     image: `${IMAGES_DIRECTORY}/models/gls-suv.jpg`,
-    price: '100 000$',
+    price: '100 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
@@ -364,7 +364,7 @@ const defaultState = [
     name: 'The S Class',
     model: 'S class',
     image: `${IMAGES_DIRECTORY}/models/s-class-saloon.jpg`,
-    price: '100 000$',
+    price: '100 000',
     quote: 'The Best or nothing...',
     carDescription: [
       {
