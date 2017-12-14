@@ -99,8 +99,8 @@ a {
 /*Home Page*/
 
 .logo-container {
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
   display: flex;
 }
 
@@ -251,6 +251,10 @@ header > div {
   color: #455a64;
   font-weight: 800;
   font-style: italic;
+}
+
+.rangeslider__fill {
+  background-color: #00b5da !important;
 }
 
 /*Models Page*/
