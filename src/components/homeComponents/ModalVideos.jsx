@@ -27,6 +27,7 @@ class ModalVideos extends React.Component {
         <div className="video-row">
           <VideoThumbnail toggleVideo={this.openModal} src="src\images\home\video1.png" />
           <VideoThumbnail toggleVideo={this.openModal} src="src\images\home\video2.png" />
+          <VideoThumbnail toggleVideo={this.openModal} src="src\images\home\video1.png" />
         </div>
       </div>
     );

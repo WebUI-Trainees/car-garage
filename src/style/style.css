@@ -120,9 +120,8 @@ a {
 .carousel-item-wrapper.home {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
   width: 70%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .carousel-item-wrapper.home > img {
