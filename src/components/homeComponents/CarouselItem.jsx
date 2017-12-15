@@ -57,19 +57,21 @@ class CarouselItem extends React.Component {
 
   render() {
     return (
-      <div className="carousel-item-wrapper home">
-        <img src={this.props.img} alt="Mercedes" />
-        <div className="event-info">
-          <h3>{this.props.title}</h3>
-          <p>{this.props.text}</p>
-          <div className="event-attend">
-            {this.state.modalIsOpen}
-            <input type="text" onChange={this.handleInputOnChange} placeholder="Type your name" />
-            <input
-              type="button"
-              value={this.state.attending ? 'Cancel Attendance' : 'Attend'}
-              onClick={this.openModal}
-            />
+      <div>
+        <div className="carousel-item-wrapper home">
+          <img src={this.props.img} alt="Mercedes" />
+          <div className="event-info">
+            <h3>{this.props.title}</h3>
+            <p>{this.props.text}</p>
+            <div className="event-attend">
+              {this.state.modalIsOpen}
+              <input type="text" onChange={this.handleInputOnChange} placeholder="Type your name" />
+              <input
+                type="button"
+                value={this.state.attending ? 'Cancel Attendance' : 'Attend'}
+                onClick={this.openModal}
+              />
+            </div>
           </div>
         </div>
         <Modal

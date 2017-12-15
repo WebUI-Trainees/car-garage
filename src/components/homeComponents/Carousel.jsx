@@ -18,13 +18,15 @@ const EventsCarousel = props => {
   };
 
   return (
-    <Slider {...settings} className="design-carousel">
-      {props.events.map(event => (
-        <div key={uuid()}>
-          <CarouselItem title={event.title} key={uuid()} text={event.text} img={event.img} />
-        </div>
-      ))}
-    </Slider>
+    <div className="design-carousel">
+      <Slider {...settings}>
+        {props.events.map(event => (
+          <div key={uuid()}>
+            <CarouselItem title={event.title} key={uuid()} text={event.text} img={event.img} />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
