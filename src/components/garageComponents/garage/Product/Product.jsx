@@ -13,18 +13,19 @@ class Product extends Component {
   };
 
   render() {
-    const { name, price, currency, isInCart } = this.props;
+    const { name, price, currency, image, isInCart } = this.props;
 
     return (
       <div>
-        <div>
+        <img src={image} alt="product" />
+        <div className="product-name">
           <h3>{name}</h3>
-          <div>
+          <div className="product-price">
             {price} {currency}
           </div>
-          <div>
-            <button className={isInCart ? 'btn btn-danger' : 'btn btn-primary'} onClick={this.handleClick}>
-              {isInCart ? 'Remove' : 'Add to cart'}
+          <div className="product-btn">
+            <button className={isInCart ? 'btn-remove' : 'btn-add'} onClick={this.handleClick}>
+              {isInCart ? 'REMOVE' : 'ADD'}
             </button>
           </div>
         </div>
@@ -38,6 +39,7 @@ Product.propTypes = {
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   currency: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   isInCart: PropTypes.bool.isRequired,
   addToCart: PropTypes.func.isRequired,
   removeFromCart: PropTypes.func.isRequired
