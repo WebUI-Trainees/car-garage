@@ -7,7 +7,7 @@ const CART_REMOVE = 'cart/REMOVE';
 // reducer
 const initialState = {
   items: [],
-  currency: 'EUR'
+  currency: '€'
 };
 
 export default function cart(state = initialState, action = {}) {

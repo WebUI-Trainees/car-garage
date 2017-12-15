@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CartItem = ({ name, price, currency, onClick }) => (
-  <div>
+  <div className="cart-item">
     <div>
-      <button onClick={onClick}>X</button>
-      <span>{name}</span>
-    </div>
-    <div>
-      {price} {currency}
+      <button className="cart-btn" onClick={onClick}>
+        X
+      </button>
+      <span className="cart-item-info">
+        {name} - {price} {currency}
+      </span>
     </div>
   </div>
 );
