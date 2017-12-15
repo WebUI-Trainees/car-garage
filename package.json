@@ -61,6 +61,7 @@
 		"axios": "^0.17.1",
 		"babel-preset-stage-1": "6.24.1",
 		"css-loader": "^0.28.7",
+		"emailjs": "^1.0.12",
 		"express": "^4.16.2",
 		"lodash": "4.17.4",
 		"node-sass": "^4.7.2",

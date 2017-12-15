@@ -23,14 +23,16 @@ class CarouselItem extends React.Component {
     this.handleAttendance = this.handleAttendance.bind(this);
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.handleInputOnChange = this.handleInputOnChange.bind(this);
     this.state = {
       attending: false,
-      modalIsOpen: false
+      modalIsOpen: false,
+      user: ''
     };
   }
 
   openModal() {
-    this.setState(prevState => ({ modalIsOpen: true, attending: !prevState.attending }));
+    this.setState(prevState => ({ modalIsOpen: true, attending: !prevState.attending, user: prevState.user }));
     setTimeout(this.closeModal, 2000);
   }
 
@@ -45,6 +47,14 @@ class CarouselItem extends React.Component {
     }));
   }
 
+  handleInputOnChange(e) {
+    const name = e.target.value;
+
+    this.setState(() => ({
+      user: name
+    }));
+  }
+
   render() {
     return (
       <div className="carousel-item-wrapper home">
@@ -54,6 +64,7 @@ class CarouselItem extends React.Component {
           <p>{this.props.text}</p>
           <div className="event-attend">
             {this.state.modalIsOpen}
+            <input type="text" onChange={this.handleInputOnChange} placeholder="Type your name" />
             <input
               type="button"
               value={this.state.attending ? 'Cancel Attendance' : 'Attend'}
@@ -69,7 +80,9 @@ class CarouselItem extends React.Component {
           contentLabel="Modal"
           ariaHideApp={false}
         >
-          <h1>{this.state.attending ? 'Your spot will be reserved!' : 'We are sorry to lose you!'}</h1>
+          <h1>
+            {this.state.attending ? `Your spot will be reserved, ${this.state.user}!` : 'We are sorry to lose you!'}
+          </h1>
         </Modal>
       </div>
     );

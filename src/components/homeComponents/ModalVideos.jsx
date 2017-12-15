@@ -1,6 +1,6 @@
 import React from 'react';
 import ModalVideo from 'react-modal-video';
-import Thumbnail from 'react-thumbnail';
+import VideoThumbnail from './VideoThumbnail';
 
 class ModalVideos extends React.Component {
   constructor(props) {
@@ -21,17 +21,13 @@ class ModalVideos extends React.Component {
           onClick={this.openModal}
           channel="youtube"
           isOpen={this.state.isOpen}
-          videoId="L61p2uyiMSo"
+          videoId="JTf36MOuo8Y"
           onClose={() => this.setState({ isOpen: false })}
         />
-
-        <Thumbnail
-          onClick={this.openModal}
-          width={250}
-          height={250}
-          page="https://facebook.github.io/react/docs/getting-started.html"
-          scale={4}
-        />
+        <div className="video-row">
+          <VideoThumbnail toggleVideo={this.openModal} src="src\images\home\video1.png" />
+          <VideoThumbnail toggleVideo={this.openModal} src="src\images\home\video2.png" />
+        </div>
       </div>
     );
   }

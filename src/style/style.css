@@ -1,5 +1,6 @@
 /* Base */
 /* ssColor = #00b7d3 */
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
 
 .d-inline-block {
   display: inline-block !important;
@@ -178,9 +179,14 @@ header > div {
   margin-bottom: 50px;
 }
 
+.event-attend input:first-of-type {
+  border-radius: 0;
+}
+
 .event-attend input {
   font-size: 14px;
   padding: 8px 12px;
+  margin: 0 10px;
   border-radius: 20%;
   background-color: #455a64;
   color: white;
@@ -190,6 +196,20 @@ header > div {
 
 .design-carousel {
   margin-bottom: 50px;
+}
+
+.video-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+.video-thumbnail img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 450px;
+  cursor: pointer;
 }
 
 /*About Page*/
@@ -734,7 +754,7 @@ header > div {
 /*Garage*/
 
 /* TEST DRIVE PAGE */
-iframe {
+iframe#chat {
   /*  background-color: rgba(255, 255, 255, 0.76); */
   background-image: url('/src/images/driveAssets/benz1.png');
   background-repeat: no-repeat;
@@ -861,7 +881,7 @@ footer {
 }
 
 #footer-heading {
-  margin-left:8px;
+  margin-left: 8px;
 }
 
 .fa {
