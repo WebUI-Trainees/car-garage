@@ -3,6 +3,7 @@ import React from 'react';
 const Chat = () => (
   <div>
     <iframe
+      id="chat"
       title="chat"
       width="60%"
       style={{ height: '50vh' }}
